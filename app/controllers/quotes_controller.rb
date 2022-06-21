@@ -11,7 +11,7 @@ class QuotesController < ApplicationController
   end
 
   def create
-    @quote = Quote.create(quote_params)
+    @quote = Quote.create!(quote_params)
     json_response(@quote)
   end
 
