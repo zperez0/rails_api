@@ -1,24 +1,21 @@
-# README
+# Rails API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### By _**Z Perez**_
 
-Things you may want to cover:
+## Description
 
-* Ruby version
+This project was created to pratice developing a Rails API using RESTful principles.
 
-* System dependencies
+## Technologies Used
 
-* Configuration
+* _Ruby on Rails_
+* _PostgreSQL_
+* _faker_
 
-* Database creation
+## Known Bugs
+* _No known issues_
 
-* Database initialization
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Copyright (c) _2022_, _Z Perez_
