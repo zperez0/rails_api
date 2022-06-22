@@ -12,12 +12,17 @@ class QuotesController < ApplicationController
 
   def create
     @quote = Quote.create!(quote_params)
-    json_response(@quote)
+    json_response(@quote, :created) 
+    # :created provides a more specific HTTP status code: 201 created
   end
 
   def update
     @quote = Quote.find(params[:id])
-    @quote.update!(quote_params)
+    if @quote.update!(quote_params)
+      render status: 200, json: {
+        message: "This quote has been updated successfully."
+      }
+    end
   end
 
   def destroy
