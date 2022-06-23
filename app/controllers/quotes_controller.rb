@@ -5,6 +5,13 @@ class QuotesController < ApplicationController
     json_response(@quotes)
   end
 
+  # def index
+  #   name = params[:name]
+  #   # binding.pry
+  #   @quotes = Quote.search(name)
+  #   json_response(@quotes)
+  # end
+
   def show
     @quote = Quote.find(params[:id])
     json_response(@quote)
