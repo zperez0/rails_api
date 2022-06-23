@@ -43,3 +43,5 @@ class QuotesController < ApplicationController
     params.permit(:author, :content)
   end
 end
+
+# add message status for destroy
