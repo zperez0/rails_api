@@ -2,6 +2,9 @@
 
 #### By _**Z Perez**_
 
+#### WIP
+add delete_route_spec
+
 ## Description
 
 This project was created to pratice developing a Rails API using RESTful principles.
