@@ -24,7 +24,7 @@ describe "exceptions work as expected", :type => :request do
     expect(response).to have_http_status(422)
     expect(JSON.parse(response.body)["message"]).to eq("Validation failed: Author can't be blank")
   end
-
+  
   it "throws error if content field is empty" do
     post "/quotes", params: { :author => "cam", :content => "" }
     expect(response).to have_http_status(422)
