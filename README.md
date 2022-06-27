@@ -3,7 +3,10 @@
 #### By _**Z Perez**_
 
 #### WIP
-add delete_route_spec
+add exploration
+add search functionality
+alphabetical order?
+finish setting up will paginate
 
 ## Description
 
