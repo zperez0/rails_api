@@ -1,0 +1,9 @@
+<% if @products.any? %>
+    <% @products.each do |product| %>
+    
+          <p>
+            <%= link_to product.name, product_path(product) %>
+          </p>
+
+<%= will_paginate @quotes, renderer: BootstrapPagination::Rails,
+    previous_label: 'Previous', next_label: 'Next' %>
