@@ -1,7 +1,7 @@
 class QuotesController < ApplicationController
 
   def index
-    @quotes = Quote.all
+    @quotes = Quote.all.paginate(page: params[:page], per_page: 10)
     json_response(@quotes)
   end
 
@@ -34,7 +34,11 @@ class QuotesController < ApplicationController
 
   def destroy
     @quote = Quote.find(params[:id])
-    @quote.destroy
+    if @quote.destroy!
+      render status: 202, json: {
+        message: "This quote has been successfully deleted."
+      }
+    end
   end
 
   private
