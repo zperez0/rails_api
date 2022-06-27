@@ -19,9 +19,10 @@ gem 'puma', '~> 3.11'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
-# BEGIN ADDED GEMS
+
 gem 'faker'
-# END ADDED GEMS
+gem 'will_paginate', '~> 3.1.1'
+gem 'will_paginate-bootstrap'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
