@@ -1,6 +1,6 @@
 # Rails API
 
-#### By _**Z Perez**_
+#### By _**Z Perez, Cameron Johnson, and Todd Pangilinan**_
 
 #### WIP
 add exploration
